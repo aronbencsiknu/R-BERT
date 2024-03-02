@@ -79,6 +79,9 @@ def acc_and_f1(preds, labels, average="macro"):
     acc = simple_accuracy(preds, labels)
 
     f1 = simple_f1(preds, labels)
+
+    conf_matrix(preds, labels)
+
     return {
         "acc": acc,
         "f1": f1,
