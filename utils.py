@@ -5,6 +5,9 @@ import random
 import numpy as np
 import torch
 from transformers import BertTokenizer
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 from official_eval import official_f1
 from sklearn.metrics import f1_score
@@ -61,6 +64,16 @@ def simple_accuracy(preds, labels):
 def simple_f1(preds, labels):
     return f1_score(labels, preds, average="macro")
 
+def conf_matrix(preds, labels):
+    conf_matrix = confusion_matrix(labels, preds)
+
+    # Plot confusion matrix
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(conf_matrix, annot=True, cmap='Blues', fmt='g')
+    plt.xlabel('Predicted labels')
+    plt.ylabel('True labels')
+    plt.title('Confusion Matrix')
+    plt.show()
 
 def acc_and_f1(preds, labels, average="macro"):
     acc = simple_accuracy(preds, labels)
