@@ -59,13 +59,17 @@ def simple_accuracy(preds, labels):
     return (preds == labels).mean()
 
 def simple_f1(preds, labels):
-    return f1_score(labels, preds)
+    return f1_score(labels, preds, average="macro")
 
 
 def acc_and_f1(preds, labels, average="macro"):
     acc = simple_accuracy(preds, labels)
 
     f1 = simple_f1(preds, labels)
+    return {
+        "acc": acc,
+        "f1": f1,
+    }
     """return {
         "acc": acc,
         "f1": official_f1(),
