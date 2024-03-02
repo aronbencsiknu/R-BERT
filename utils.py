@@ -7,6 +7,7 @@ import torch
 from transformers import BertTokenizer
 
 from official_eval import official_f1
+from sklearn.metrics import f1_score
 
 ADDITIONAL_SPECIAL_TOKENS = ["<e1>", "</e1>", "<e2>", "</e2>"]
 
@@ -57,10 +58,15 @@ def compute_metrics(preds, labels):
 def simple_accuracy(preds, labels):
     return (preds == labels).mean()
 
+def simple_f1(preds, labels):
+    return f1_score(labels, preds)
+
 
 def acc_and_f1(preds, labels, average="macro"):
     acc = simple_accuracy(preds, labels)
-    return {
+
+    f1 = simple_f1(preds, labels)
+    """return {
         "acc": acc,
         "f1": official_f1(),
-    }
+    }"""
