@@ -31,8 +31,12 @@ class Trainer(object):
             label2id={label: i for i, label in enumerate(self.label_lst)},
         )
         self.model = RBERT.from_pretrained(args.model_name_or_path, config=self.config, args=args)
-        
+
         if args.few_shot:
+
+            for param in self.model.parameters():
+                param.requires_grad = False
+                
             self.model.label_classifier = FCLayer(
             784 * 3,
             self.num_labels,
