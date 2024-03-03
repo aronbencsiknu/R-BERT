@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from tqdm import tqdm, trange
 from transformers import AdamW, BertConfig, get_linear_schedule_with_warmup
 
-from model import RBERT
+from model import RBERT, FCLayer
 from utils import compute_metrics, get_label, write_prediction
 
 logger = logging.getLogger(__name__)
@@ -31,7 +31,15 @@ class Trainer(object):
             label2id={label: i for i, label in enumerate(self.label_lst)},
         )
         self.model = RBERT.from_pretrained(args.model_name_or_path, config=self.config, args=args)
-
+        
+        if args.few_shot:
+            self.model.label_classifier = FCLayer(
+            784 * 3,
+            self.num_labels,
+            args.dropout_rate,
+            use_activation=False,
+        )
+            
         # GPU or CPU
         self.device = "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu"
         self.model.to(self.device)

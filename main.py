@@ -112,6 +112,9 @@ if __name__ == "__main__":
         help="Add [SEP] token at the end of the sentence",
     )
 
+    
+    parser.add_argument("--few_shot", default=False, type=bool, help="Is few shot training")
+
     args = parser.parse_args()
 
     main(args)
