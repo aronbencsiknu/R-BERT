@@ -34,11 +34,16 @@ class Trainer(object):
 
         if args.few_shot:
 
+            hidden_size = 768
+            
             for param in self.model.parameters():
                 param.requires_grad = False
-                
+
+            
+            self.model.cls_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
+            self.model.entity_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
             self.model.label_classifier = FCLayer(
-            768 * 3,
+            hidden_size * 3,
             self.num_labels,
             args.dropout_rate,
             use_activation=False,
