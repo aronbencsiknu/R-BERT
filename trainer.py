@@ -38,7 +38,7 @@ class Trainer(object):
                 param.requires_grad = False
                 
             self.model.label_classifier = FCLayer(
-            784 * 3,
+            768 * 3,
             self.num_labels,
             args.dropout_rate,
             use_activation=False,
