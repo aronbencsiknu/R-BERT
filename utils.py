@@ -65,7 +65,9 @@ def simple_f1(preds, labels):
     return f1_score(labels, preds, average="macro")
 
 def conf_matrix(preds, labels):
+    # Compute confusion matrix
     conf_matrix = confusion_matrix(labels, preds)
+    print(conf_matrix)
 
     # Plot confusion matrix
     plt.figure(figsize=(8, 6))
@@ -73,7 +75,7 @@ def conf_matrix(preds, labels):
     plt.xlabel('Predicted labels')
     plt.ylabel('True labels')
     plt.title('Confusion Matrix')
-    plt.show()
+    plt.savefig('confusion_matrix.png')  # Save the plot as an image file
 
 def acc_and_f1(preds, labels, average="macro"):
     acc = simple_accuracy(preds, labels)
