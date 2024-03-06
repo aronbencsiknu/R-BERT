@@ -1,6 +1,6 @@
 import logging
 import os
-
+import math
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
@@ -9,8 +9,12 @@ from transformers import AdamW, BertConfig, get_linear_schedule_with_warmup
 
 from model import RBERT, FCLayer
 from utils import compute_metrics, get_label, write_prediction
+from torch.optim import SGD, Adamax
 
 logger = logging.getLogger(__name__)
+
+import torch
+from torch.optim.optimizer import Optimizer, required
 
 
 class Trainer(object):
@@ -30,8 +34,7 @@ class Trainer(object):
             id2label={str(i): label for i, label in enumerate(self.label_lst)},
             label2id={label: i for i, label in enumerate(self.label_lst)},
         )
-        self.model = RBERT.from_pretrained(args.model_name_or_path, config=self.config, args=args)
-
+        self.model = RBERT.from_pretrained('./model', config=self.config, args=args, ignore_mismatched_sizes=True)
         if args.few_shot:
 
             hidden_size = 768
@@ -40,10 +43,10 @@ class Trainer(object):
                 param.requires_grad = False
 
             
-            self.model.cls_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
-            self.model.entity_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
+            # self.model.cls_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
+            # self.model.entity_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
             self.model.label_classifier = FCLayer(
-            hidden_size * 3,
+            300,
             self.num_labels,
             args.dropout_rate,
             use_activation=False,
@@ -60,7 +63,6 @@ class Trainer(object):
             sampler=train_sampler,
             batch_size=self.args.train_batch_size,
         )
-
         if self.args.max_steps > 0:
             t_total = self.args.max_steps
             self.args.num_train_epochs = (
@@ -177,7 +179,7 @@ class Trainer(object):
 
         self.model.eval()
 
-        for batch in tqdm(eval_dataloader, desc="Evaluating"):
+        for batch in tqdm(eval_dataloader, desc="Evaluating", leave=False):
             batch = tuple(t.to(self.device) for t in batch)
             with torch.no_grad():
                 inputs = {

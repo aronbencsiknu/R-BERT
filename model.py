@@ -2,6 +2,29 @@ import torch
 import torch.nn as nn
 from transformers import BertModel, BertPreTrainedModel
 
+class SelfAttention(nn.Module):
+    def __init__(self, hidden_size, heads=12):
+        super(SelfAttention, self).__init__()
+        self.hidden_size = hidden_size
+        self.heads = heads
+        self.query = nn.Linear(hidden_size, hidden_size)
+        self.key = nn.Linear(hidden_size, hidden_size)
+        self.value = nn.Linear(hidden_size, hidden_size)
+        self.softmax = nn.Softmax(dim=-1)
+
+    def forward(self, inputs, mask=None):
+        Q = self.query(inputs)
+        K = self.key(inputs)
+        V = self.value(inputs)
+
+        attention_scores = torch.matmul(Q, K.transpose(-2, -1)) / (self.hidden_size ** 0.5)
+        if mask is not None:
+            attention_scores = attention_scores.masked_fill(mask == 0, -1e9)
+        attention_probs = self.softmax(attention_scores)
+        context = torch.matmul(attention_probs, V)
+        return context, attention_probs
+
+
 
 class FCLayer(nn.Module):
     def __init__(self, input_dim, output_dim, dropout_rate=0.0, use_activation=True):
@@ -27,8 +50,12 @@ class RBERT(BertPreTrainedModel):
 
         self.cls_fc_layer = FCLayer(config.hidden_size, config.hidden_size, args.dropout_rate)
         self.entity_fc_layer = FCLayer(config.hidden_size, config.hidden_size, args.dropout_rate)
+        self.hidden_layer = FCLayer(3*config.hidden_size, config.hidden_size, args.dropout_rate)
+        self.small_hidden_layer = FCLayer(config.hidden_size, 300, args.dropout_rate)
+        self.self_attention = SelfAttention(config.hidden_size)  # Add this line
+
         self.label_classifier = FCLayer(
-            config.hidden_size * 3,
+            300,
             config.num_labels,
             args.dropout_rate,
             use_activation=False,
@@ -58,10 +85,12 @@ class RBERT(BertPreTrainedModel):
         sequence_output = outputs[0]
         pooled_output = outputs[1]  # [CLS]
 
-        # Average
-        e1_h = self.entity_average(sequence_output, e1_mask)
-        e2_h = self.entity_average(sequence_output, e2_mask)
+        # Apply self-attention to BERT output
+        attention_output, _ = self.self_attention(sequence_output)  # You might want to use attention_mask here as well
 
+        # Use attention_output instead of sequence_output for the rest of the processing
+        e1_h = self.entity_average(attention_output, e1_mask)
+        e2_h = self.entity_average(attention_output, e2_mask)
         # Dropout -> tanh -> fc_layer (Share FC layer for e1 and e2)
         pooled_output = self.cls_fc_layer(pooled_output)
         e1_h = self.entity_fc_layer(e1_h)
@@ -69,6 +98,8 @@ class RBERT(BertPreTrainedModel):
 
         # Concat -> fc_layer
         concat_h = torch.cat([pooled_output, e1_h, e2_h], dim=-1)
+        concat_h = self.hidden_layer(concat_h)
+        concat_h = self.small_hidden_layer(concat_h)
         logits = self.label_classifier(concat_h)
 
         outputs = (logits,) + outputs[2:]  # add hidden states and attention if they are here
