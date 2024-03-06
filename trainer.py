@@ -27,14 +27,16 @@ class Trainer(object):
         self.label_lst = get_label(args)
         self.num_labels = len(self.label_lst)
 
+        model_path = "./model" if os.path.exists("./model") else args.model_name_or_path 
+
         self.config = BertConfig.from_pretrained(
-            args.model_name_or_path,
+            model_path,
             num_labels=self.num_labels,
             finetuning_task=args.task,
             id2label={str(i): label for i, label in enumerate(self.label_lst)},
             label2id={label: i for i, label in enumerate(self.label_lst)},
         )
-        self.model = RBERT.from_pretrained('./model', config=self.config, args=args, ignore_mismatched_sizes=True)
+        self.model = RBERT.from_pretrained(model_path, config=self.config, args=args, ignore_mismatched_sizes=True)
         if args.few_shot:
 
             hidden_size = 768
