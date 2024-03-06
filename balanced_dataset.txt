@@ -1,0 +1,121 @@
+P931(e2,e1)	Merpati flight 106 departed Jakarta ( CGK ) on a domestic flight to <e1> Tanjung Pandan </e1> ( <e2> TJQ </e2> ) .
+P931(e2,e1)	The name was at one point changed to <e1> Nottingham </e1> <e2> East Midlands Airport </e2> so as to include the name of the city that is supposedly most internationally recognisable , mainly due to the Robin Hood legend .
+P931(e1,e2)	It is a four - level stack interchange near <e1> Fort Lauderdale - Hollywood International Airport </e1> in <e2> Fort Lauderdale , Florida </e2> .
+P931(e1,e2)	It is the main alternate of <e1> Jinnah International Airport </e1> in <e2> Karachi </e2> with a distance of about 350   km/220 miles ; well under an hour 's flight time in turboprop aircraft .
+P931(e1,e2)	Nearby airports include Akwa Ibom Airport at Okobo and <e1> Margaret Ekpo International Airport </e1> in <e2> Calabar </e2> .
+P931(e1,e2)	<e1> Pakyong Airport </e1> , a Greenfield project , is under construction southeast of <e2> Gangtok </e2> .
+P931(e1,e2)	Its hub is <e1> Tinson Pen Aerodrome </e1> in <e2> Kingston </e2> ( KTP ) , and its other major gateway was Sangster International Airport in Montego Bay ( MBJ ) .
+P931(e2,e1)	<e1> Manchester </e1> boasts a <e2> large regional airport </e2> , with scheduled commercial services .
+P931(e2,e1)	Route 41 ends just north of the Richmond - <e1> Pittsfield </e1> line at U.S. Route 20 , just east of the Hancock Shaker Village in Hancock and southwest of Pittsfield 's <e2> airport </e2> and city center .
+P931(e2,e1)	Casilda is the southern terminus of the railway line which links Placetas and Fomento to <e1> Trinidad </e1> , has a small harbor , and is 4 km from <e2> Alberto Delgado Airport </e2> .
+P4552(e1,e2)	The Schareck , a mountain with a height of , lies in the <e1> Goldberg Group </e1> of the <e2> High Tauern </e2> in Austria .
+P4552(e1,e2)	Mount Zuckerhut ( ) is a peak ( 2,525 m ) standing southeast of <e1> Ritscher Peak </e1> in the <e2> Gruber Mountains </e2> of Queen Maud Land .
+P4552(e1,e2)	The Crosby Nunataks ( ) are a set of three nunataks northeast of <e1> Mount Morrison </e1> , in the northern part of the <e2> Tula Mountains </e2> in Enderby Land .
+P4552(e1,e2)	Its source on the north slope of <e1> Zwang Peak </e1> of the <e2> Diablo Range </e2> , in Kings County .
+P4552(e1,e2)	Walker Ridge ( ) is a high mountain ridge between <e1> Stafford Glacier </e1> and Coral Sea Glacier in the <e2> Victory Mountains </e2> of Victoria Land .
+P4552(e2,e1)	Kuivinen Ridge ( ) is a transverse ridge extending southwest - northeast across the <e1> Saint Johns Range </e1> between an unnamed glacier and the <e2> Ringer Glacier </e2> in Victoria Land .
+P4552(e2,e1)	Alpine chipmunks only live in high <e1> Sierra Nevada </e1> , from Yosemite National Park in the north , to <e2> Olancha Peak </e2> in the south .
+P4552(e2,e1)	The Crestones are a cluster of high summits in the <e1> Sangre de Cristo Range </e1> , comprising Crestone Peak , Crestone Needle , <e2> Kit Carson Peak </e2> , Challenger Point , Humboldt Peak , and Columbia Point .
+P4552(e2,e1)	It is the tenth highest peak in Peru and the third in the <e1> Huayhuash </e1> range ( after Yerupajá and <e2> Siula Grande </e2> ) .
+P4552(e2,e1)	It is located high in the southern <e1> Green Mountains </e1> , with its little habitable terrain sandwiched between the main spine of those mountains and <e2> Mount Snow </e2> .
+P140(e1,e2)	The name of the school was changed in 1932 to Bishop <e1> John Carroll </e1> after the first <e2> Catholic </e2> Bishop in the United States .
+P140(e1,e2)	The suburb is also home to the Fink Karp Ivany campus of <e1> Mount Scopus Memorial College </e1> , a <e2> Jewish </e2> day school .
+P140(e1,e2)	Currently , it is the seat of the <e1> Aragatsotn Diocese </e1> of the <e2> Armenian Apostolic Church </e2> .
+P140(e1,e2)	Unlike most <e1> Lithuanians </e1> , who remained Roman Catholic after the Protestant Reformation , most Lietuvininkai became Lutheran - <e2> Protestants </e2> ( Evangelical - Lutheran ) .
+P140(e1,e2)	<e1> Joseph Francis Busch </e1> ( April 18 , 1866—May 31 , 1953 ) was an American prelate of the <e2> Catholic Church </e2> .
+P140(e2,e1)	The magazine was directed by the most " curial " of Italy 's veteran <e1> Catholic </e1> politicians , senator for life <e2> Giulio Andreotti </e2> .
+P140(e2,e1)	The Franciscans are a group of related mendicant religious orders within the <e1> Catholic Church </e1> , founded in 1209 by <e2> Francis of Assisi </e2> .
+P140(e2,e1)	Since the reign of Elizabeth , England had contained a number of theologians who opposed the extreme predestinarian views in the high <e1> Calvinism </e1> propounded by <e2> Theodore Beza </e2> and accepted by the Puritans .
+P140(e2,e1)	They arrived in the village of Jhabal where a <e1> Sikh </e1> woman named <e2> Mai Bhago </e2> , upon hearing their tale of desertion , motivated them into returning to Guru Ji at Anandpur Sahib .
+P140(e2,e1)	In 1999 Father Philip Mizer with Alypy Medvedev , OSBM , was finally converted to the <e1> Catholic Church </e1> in Poland , by <e2> Jan Martyniak </e2> .
+P1923(e1,e2)	The season was hallmarked by United winning their fourth Major League Soccer championship , winning <e1> MLS Cup 2004 </e1> 3–2 over <e2> Kansas City Wizards </e2> .
+P1923(e1,e2)	Six days later , he recorded the team 's first league goal of the <e1> new season </e1> , the game 's only against <e2> Bastia </e2> .
+P1923(e1,e2)	Nieto set a record at the <e1> 2002 FIFA World Cup </e1> , issuing 14 yellow cards and 2 red cards in a match between <e2> Germany </e2> and Cameroon .
+P1923(e1,e2)	He scored in the <e1> 1956 FA Cup Final </e1> , which ended in a 3–1 defeat to <e2> Manchester City </e2> .
+P1923(e1,e2)	In the <e1> 2010 Russian Premier League </e1> campaign , he scored 4 goals in the first 4 games for <e2> Spartak Nalchik </e2> , helping his club to take an unexpected lead in the League at that point .
+P1923(e2,e1)	Elanga played for the <e1> Cameroon national football team </e1> at the <e2> 1998 FIFA World Cup </e2> .
+P1923(e2,e1)	İnler played all of <e1> Switzerland </e1> 's matches at <e2> UEFA Euro 2008 </e2> in which they were eliminated at the group stage on home soil .
+P1923(e2,e1)	In January 2015 , he was appointed as the manager of <e1> Equatorial Guinea </e1> , three weeks before the <e2> 2015 Africa Cup of Nations </e2> .
+P1923(e2,e1)	Jedinak scored his first international goal against <e1> South Korea </e1> at <e2> 2011 AFC Asian Cup </e2> .
+P1923(e2,e1)	In 2008 , Gomis joined <e1> FC Shinnik Yaroslavl </e1> in Russia , appearing rarely during his spell and also <e2> suffering relegation </e2> from the Premier League .
+P150(e1,e2)	It lies in the <e1> La Paz Department </e1> , <e2> Los Andes Province </e2> , Batallas Municipality .
+P150(e1,e2)	Orangetree is located in northwestern <e1> Collier County </e1> at ( 26.289386 , -81.584686 ) , northeast of downtown <e2> Naples </e2> .
+P150(e1,e2)	Rose returned to <e1> Ohio </e1> and was elected sheriff for <e2> Washington County </e2> as a member of the Republican Party , and subsequently as a state senator .
+P150(e1,e2)	The airline operates scheduled flights within <e1> The Bahamas </e1> ( Nassau , North Eleuthera , Governor 's Harbour , Rocksound , Crooked Island , <e2> Acklins </e2> , Deadman 's Cay , Stella Maris ) .
+P150(e1,e2)	Fayzabad in <e1> Afghanistan </e1> is the administrative headquarters of the <e2> Badakhshan Province </e2> .
+P150(e2,e1)	The river merges with the Nakhon Nayok River to become the Bang Pakong River at the border of Ban Sang and <e1> Bang Nam Priao </e1> districts , <e2> Chachoengsao Province </e2> .
+P150(e2,e1)	The site is located in <e1> Tokai </e1> in the Naka District in <e2> Ibaraki Prefecture </e2> , Japan and is operated by the Japan Atomic Power Company .
+P150(e2,e1)	He was born at <e1> Leka </e1> in <e2> Nord - Trøndelag </e2> , Norway .
+P150(e2,e1)	of Korea 157 - 815 " and " CVR / FDR analysis and wreckage laboratory : Gimpo International Airport 274 Gwahae - dong , <e1> Gangseo - gu </e1> , <e2> Seoul </e2> , Korea 157 - 711 "
+P150(e2,e1)	Vick is an unincorporated community in <e1> Avoyelles Parish </e1> , <e2> Louisiana </e2> , United States .
+P6(e1,e2)	He was the son of mayor of <e1> Warsaw </e1> <e2> Jan Dekert </e2> .
+P6(e1,e2)	Following the 2013 national elections , Laumann was appointed State Secretary in the <e1> Federal Ministry of Health </e1> under the leadership of minister <e2> Hermann Gröhe </e2> in the third government of Chancellor Angela Merkel .
+P6(e1,e2)	At the regional elections in March 2004 , the socialist mayor of <e1> Montpellier </e1> <e2> Georges Frêche </e2> , defeated its center - right president .
+P6(e1,e2)	Other Republican candidates include <e1> Huntsville </e1> Mayor <e2> Tommy Battle </e2> , state Senator Bill Hightower , evangelist Scott Dawson , and businessman Joshua Jones .
+P6(e1,e2)	However , despite opposition from the Conservatives such as David Cameron , Section 28 was eventually repealed in 2003 by the <e1> Labour government </e1> under <e2> Tony Blair </e2> .
+P6(e2,e1)	<e1> John Heilman </e1> is an American municipal politician and current mayor of <e2> West Hollywood , California </e2> .
+P6(e2,e1)	In July 2015 , <e1> John Cranley </e1> , the Mayor of the City of <e2> Cincinnati </e2> also honoured her by proclaiming July 24 , 2015 as " Shreya Ghoshal Day of Entertainment and Inspiration " in Cincinnati .
+P6(e2,e1)	<e1> Akhmetzhan Yessimov </e1> ( ) is the former Mayor of <e2> Almaty </e2> and director of EXPO-2017 .
+P6(e2,e1)	His eldest son , <e1> Sheikh Khalifa bin Zayed Al Nahyan </e1> , succeeded as Emir of <e2> Abu Dhabi </e2> .
+P6(e2,e1)	In 2013 and 2015 , <e1> Sven Gerich </e1> and Thomas Kufen became the openly gay mayors of <e2> Wiesbaden </e2> and Essen , respectively .
+P27(e1,e2)	The following list is a discography of production by <e1> Tyler , the Creator </e1> , an <e2> American </e2> rapper and record producer .
+P27(e1,e2)	He became the most hated man in Hungary and was advised to flee by Soviet ambassador <e1> Yuri Andropov </e1> to the <e2> Soviet Union </e2> along with other Hungarian hardliners such as Ernő Gerő .
+P27(e1,e2)	Later , in 2015 <e1> Kate Brown </e1> became the first openly bisexual governor in the <e2> United States </e2> , as governor of Oregon when the old governor resigned .
+P27(e1,e2)	<e1> Garth Stein </e1> , <e2> American </e2> author and film producer , was inspired by " State of Dogs " to write his best selling novel " The Art of Racing in the Rain " .
+P27(e1,e2)	Ofira Resnikov Navon (; January 1 , 1936 – August 22 , 1993 ) was the wife of <e1> Yitzhak Navon </e1> , the fifth President of <e2> Israel </e2> .
+P27(e2,e1)	Laodice was a daughter of the <e1> Seleucid </e1> King <e2> Seleucus IV Philopator </e2> and his wife , Laodice IV .
+P27(e2,e1)	He suggested the idea to <e1> Indonesia </e1> 's Minister of Foreign Affairs , <e2> Adam Malik </e2> who promised to bring it up with Suharto .
+P27(e2,e1)	Mayuka scored the first goal for <e1> Zambia </e1> of 2012 Africa Cup of Nations which was score again by his teammate <e2> Rainford Kalaba </e2> second goal in the game with Zambia earning a victory against Senegal .
+P27(e2,e1)	The official also noted that the drastic increase of Japanese tourists to <e1> Bhutan </e1> happened especially after the Druk Gyalpo Jigme Khesar Namgyal Wangchuck and Queen <e2> Jetsun Pema </e2> made a visit to the country .
+P27(e2,e1)	On August 10 , 2008 , a recall referendum was held in <e1> Bolivia </e1> on the mandates of President Evo Morales , his Vice - president <e2> Alvaro Garcia Linera </e2> and eight of the nine regional prefects .
+P449(e1,e2)	A line of <e1> Zoé Kézako </e1> merchandising products ( such as dolls , sofas and pillows ) is currently being developed with <e2> TF1 </e2> Licences and SIMBA , to be released in 2009 .
+P449(e1,e2)	He has also made appearances on Saturday Kitchen on BBC1 , Newsnight on BBC2 and <e1> Sunday Brunch </e1> on <e2> Channel 4 </e2> .
+P449(e1,e2)	In 2013 , Walker was a key cast member of the fantasy show " <e1> Atlantis </e1> " aired on <e2> BBC One </e2> based on Greek myth and the mythological city Atlantis .
+P449(e1,e2)	<e1> Saksi </e1> is a Philippine late - night newscast of <e2> GMA Network </e2> .
+P449(e1,e2)	" <e1> The Christmas Wife </e1> " was filmed in 1988 starring Julie Harris and Jason Robards for <e2> HBO </e2> and was broadcast for several Christmas seasons .
+P449(e2,e1)	He played " Brock " on the <e1> ABC </e1> sitcom " <e2> Fresh Off the Boat </e2> " in 2015 .
+P449(e2,e1)	He was the host of <e1> Disney Channel </e1> 's " <e2> PrankStars </e2> " .
+P449(e2,e1)	" Live and Learn " is the first episode of the first season and the series premiere of the <e1> TNT </e1> science fiction drama " <e2> Falling Skies </e2> " .
+P449(e2,e1)	In the late 1960s , he was also a substitute announcer on the <e1> ABC </e1> version of " <e2> Supermarket Sweep </e2> " .
+P449(e2,e1)	In February 2016 it was confirmed Parkinson is joining the cast of returning <e1> ITV </e1> drama " <e2> Safe House </e2> " for its second series .
+P1435(e1,e2)	Mustoe House , The Yard , <e1> Barton Lodge </e1> , Switchback School , and Garth Newel are also listed on the <e2> National Register of Historic Places </e2> .
+P1435(e1,e2)	<e1> Knebworth Woods </e1> is a <e2> Site of Special Scientific Interest </e2> .
+P1435(e1,e2)	<e1> Coed Nant Llolwyn </e1> is a <e2> Site of Special Scientific Interest </e2> in Ceredigion , west Wales .
+P1435(e1,e2)	The <e1> Mascot Roller Mills </e1> and Pinetown Covered Bridge are listed on the <e2> National Register of Historic Places </e2> .
+P1435(e1,e2)	Collin 's Ford Bridge , <e1> Marble Creek Bridge </e1> , Oakdale School , also known as Building 401 , and Old Timbers are listed on the <e2> National Register of Historic Places </e2> .
+P1435(e2,e1)	There are 11 <e1> National Historic Sites of Canada </e1> located in Charlottetown , including Province House and the <e2> Confederation Centre of the Arts </e2> .
+P1435(e2,e1)	It was subsequently added to the <e1> National Register of Historic Places </e1> as a part of the <e2> Antebellum Homes in Eutaw Thematic Resource </e2> on April 2 , 1982 , due to its architectural significance .
+P1435(e2,e1)	The building was listed on the <e1> National Register of Historic Places </e1> in 1990 , and is located near the center of the <e2> Westminster Street Historic District </e2> , listed in 2003 .
+P1435(e2,e1)	<e1> Historic </e1> <e2> Quaker homes </e2> were Underground Railroad sites at least from the time period of Abby Kelley Foster .
+P1435(e2,e1)	The building was listed on the <e1> National Register of Historic Places </e1> in 2004 as the <e2> Seventy - First Consolidated School </e2> .
+P175(e1,e2)	She wrote a handful of songs , two of which , " <e1> Beautiful </e1> " and " Cruz , " would eventually be recorded and appear on <e2> Christina Aguilera </e2> 's hit album " Stripped " .
+P175(e1,e2)	After " <e1> Kuka teki huorin </e1> " , <e2> Sielun Veljet </e2> started re - recording some of their material in English in order to find an audience outside Finland .
+P175(e1,e2)	" I Am Woman " was the first number one single for Capitol Records since " <e1> Ode to Billie Joe </e1> " by <e2> Bobbie Gentry </e2> five years earlier , in 1967 .
+P175(e1,e2)	" <e1> Come Back Around </e1> " was the first single released from British rock band <e2> Feeder </e2> 's 2002 album " Comfort in Sound " .
+P175(e1,e2)	<e1> Lullaby </e1> is the second studio album by American synthpop and electronic band <e2> Book of Love </e2> , released on June 21 , 1988 , by Sire Records .
+P175(e2,e1)	" <e1> Pearl Jam </e1> " also included the singles " <e2> Life Wasted </e2> " and " Gone " .
+P175(e2,e1)	The song was originally recorded for <e1> Aaliyah </e1> 's 1996 album " <e2> One in a Million </e2> " , but the recording was withdrawn after its completion and revisited for her 2001 self - titled third album .
+P175(e2,e1)	The video also feature parodies of Britney Spears ' " Sometimes " , and <e1> Christina Aguilera </e1> 's " <e2> Genie in a Bottle </e2> " video .
+P175(e2,e1)	Lo was also featured on Swedish DJ <e1> Alesso </e1> 's single " Heroes ( We Could Be ) " from his debut album , " <e2> Forever </e2> " .
+P175(e2,e1)	After the album was certified platinum , LaFace Records gave <e1> OutKast </e1> more creative control and advanced money for their 1996 follow - up album " <e2> ATLiens </e2> " .
+P1344(e1,e2)	He made thirty appearances for <e1> Luxembourg </e1> in the <e2> Davis Cup </e2> between 1947 and 1957 , losing all thirty .
+P1344(e1,e2)	<e1> Ina Kleber </e1> ( born 29 September 1964 in Greiz ) is a German former swimmer who competed in the <e2> 1980 Summer Olympics </e2> .
+P1344(e1,e2)	The selection of alpine skier <e1> Žana Novaković </e1> as flagbearer for the <e2> 2014 Winter Olympics </e2> resulted in controversy as Igor Laikert had better results .
+P1344(e1,e2)	Famous competitors include <e1> Rie Mastenbroek </e1> , who won the gold medal at the <e2> 1936 Summer Olympics </e2> in the 100 m freestyle , 400 m and 4 × 100 m freestyle .
+P1344(e1,e2)	His wife , <e1> Marita Payne - Wiggins </e1> , competed for Canada in track and field at the <e2> 1984 Summer Olympics </e2> , winning two silver medals .
+P1344(e2,e1)	At the <e1> 1992 Winter Olympics </e1> in Albertville , he won a bronze medal in the four - man event with teammates Gustav Weder , Donat Acklin and <e2> Lorenz Schindelholz </e2> .
+P1344(e2,e1)	was the Icelandic entry in the <e1> Eurovision Song Contest 2000 </e1> , performed in English by <e2> August & Telma </e2> .
+P1344(e2,e1)	Retrieved 2018 - 02 - 17 . and a finalist at the <e1> 1999 World Championships in Athletics </e1> . <e2> Jiri Kuntos </e2> .
+P1344(e2,e1)	In the <e1> 1984 Summer Olympics </e1> , boxer <e2> Aziz Salihu </e2> became the first individual athlete from Kosovo winning an Olympic medal , a bronze in Super heavyweight .
+P1344(e2,e1)	Marga Bult continued with a fairly successful solo career , which included her entry to the <e1> Eurovision Song Contest in 1987 </e1> , where she performed " Rechtop in the wind " under the pseudonym <e2> Marcha </e2> .
+P39(e1,e2)	His father , also named <e1> Flavius Dalmatius </e1> , was the half - brother of Constantine and served as <e2> censor </e2> .
+P39(e1,e2)	The town is reported as being " named after Sir Lintorn Simmons , Field Marshal and Commandant of the Royal Engineers " by <e1> William Jervois </e1> , the 10th <e2> Governor of South Australia </e2> .
+P39(e1,e2)	She faced Republican <e1> Phil Scott </e1> , the Lieutenant <e2> Governor of Vermont </e2> , in the November general election .
+P39(e1,e2)	Baroness <e1> Anna Maria Corazza Bildt </e1> ( born 10 March 1963 ) is a Swedish politician and <e2> Member of the European Parliament </e2> ( MEP ) from Sweden .
+P39(e1,e2)	Toribiong was opposed by <e1> Elias Camsek Chin </e1> , the outgoing Palauan <e2> Vice President </e2> .
+P39(e2,e1)	One of which included the first allegation of an indecent consecration of <e1> archbishop of Canterbury </e1> <e2> Matthew Parker </e2> .
+P39(e2,e1)	In response to these events , <e1> President </e1> of Croatia , <e2> Ivo Josipović </e2> , called for understanding for Serbs who mourn for those they lost during the Operation Storm .
+P39(e2,e1)	He was installed by <e1> Archbishop </e1> <e2> Giorgio Zur </e2> in the presence of his predecessor Archbishop S. Arulappa and of Bishop Joseph S. Thumma on 30 April 2000 .
+P39(e2,e1)	<e1> Prime Minister </e1> <e2> Laurent Lamothe </e2> resigned on 14 December and was replaced by Evans Paul .
+P39(e2,e1)	At 6:00 PM , General Ensio Siilasvuo , head of the UN Emergency Force in Cairo , called the <e1> Israeli Defense Minister </e1> , <e2> Moshe Dayan </e2> , and told him of the decision .
+
