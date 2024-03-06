@@ -16,6 +16,17 @@ logger = logging.getLogger(__name__)
 import torch
 from torch.optim.optimizer import Optimizer, required
 
+import torch.nn.init as init
+
+def reset_fc_layer(layer):
+  # Assuming the layer is an instance of FCLayer
+  if hasattr(layer, 'linear'):  # Check if the layer has the 'linear' attribute
+      # Apply Xavier uniform initialization to the weights
+      init.xavier_uniform_(layer.linear.weight)
+      # Set biases to zero
+      if layer.linear.bias is not None:
+          layer.linear.bias.data.fill_(0.0)
+
 
 class Trainer(object):
     def __init__(self, args, train_dataset=None, dev_dataset=None, test_dataset=None):
@@ -47,6 +58,8 @@ class Trainer(object):
             
             # self.model.cls_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
             # self.model.entity_fc_layer = FCLayer(hidden_size, hidden_size, args.dropout_rate)
+                
+            # reset_fc_layer(self.model.cl)
             self.model.label_classifier = FCLayer(
             300,
             self.num_labels,
