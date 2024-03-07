@@ -116,6 +116,8 @@ class SemEvalProcessor(object):
             file_to_read = self.args.dev_file
         elif mode == "test":
             file_to_read = self.args.test_file
+        elif mode.startswith("sentence"):
+            file_to_read = "sentence.tsv"
 
         logger.info("LOOKING AT {}".format(os.path.join(self.args.data_dir, file_to_read)))
         return self._create_examples(self._read_tsv(os.path.join(self.args.data_dir, file_to_read)), mode)

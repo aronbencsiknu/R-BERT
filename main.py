@@ -3,7 +3,7 @@ import argparse
 from data_loader import load_and_cache_examples
 from trainer import Trainer
 from utils import init_logger, load_tokenizer, set_seed
-
+import datetime
 
 def main(args):
     init_logger()
@@ -13,6 +13,15 @@ def main(args):
     train_dataset = load_and_cache_examples(args, tokenizer, mode="train")
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
 
+    if args.predict_sentence:
+      
+      with open("sentence.tsv", mode="w") as file:
+        file.write("x\t"+str(args.sentence))
+
+      sentence_dataset = load_and_cache_examples(args, tokenizer, mode="sentence_"+str(datetime.datetime.now()))
+
+      trainer.predict(sentence_dataset)
+
     trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset)
 
     if args.do_train:
@@ -21,7 +30,7 @@ def main(args):
     if args.do_eval:
         trainer.load_model()
         trainer.evaluate("test")
-
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

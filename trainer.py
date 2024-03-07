@@ -228,6 +228,42 @@ class Trainer(object):
             logger.info("  {} = {:.4f}".format(key, results[key]))
 
         return results
+    
+    def predict(self, dataset):
+        
+        eval_sampler = SequentialSampler(dataset)
+        eval_dataloader = DataLoader(dataset, sampler=eval_sampler, batch_size=1)
+
+        # Eval!
+        logger.info("***** Running evaluation on %s dataset *****", "sentence")
+        logger.info("  Num examples = %d", len(dataset))
+        logger.info("  Batch size = %d", self.args.eval_batch_size)
+        eval_loss = 0.0
+        nb_eval_steps = 0
+        preds = None
+        out_label_ids = None
+
+        self.model.eval()
+
+        for batch in tqdm(eval_dataloader, desc="Evaluating", leave=False):
+            batch = tuple(t.to(self.device) for t in batch)
+            with torch.no_grad():
+                inputs = {
+                    "input_ids": batch[0],
+                    "attention_mask": batch[1],
+                    "token_type_ids": batch[2],
+                    "labels": batch[3],
+                    "e1_mask": batch[4],
+                    "e2_mask": batch[5],
+                }
+                outputs = self.model(**inputs)
+                tmp_eval_loss, logits = outputs[:2]
+
+                preds = np.append(preds, logits.detach().cpu().numpy(), axis=0)
+                out_label_ids = np.append(out_label_ids, inputs["labels"].detach().cpu().numpy(), axis=0)
+
+                print(preds, out_label_ids)
+
 
     def save_model(self):
         # Save model checkpoint (Overwrite)
