@@ -1,6 +1,6 @@
 import argparse
 
-from data_loader import load_and_cache_examples
+from data_loader import load_and_cache_examples, prediction_to_label
 from trainer import Trainer
 from utils import init_logger, load_tokenizer, set_seed
 import datetime
@@ -23,7 +23,7 @@ def main(args):
       sentence_dataset = load_and_cache_examples(args, tokenizer, mode="sentence_"+str(datetime.datetime.now()))
 
       prediction = trainer.predict(sentence_dataset)
-      
+      print(prediction_to_label(prediction))
 
 
     if args.do_train:

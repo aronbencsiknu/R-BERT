@@ -125,7 +125,19 @@ class SemEvalProcessor(object):
 
 processors = {"semeval": SemEvalProcessor}
 
+def prediction_to_label(prediction):
+  with open('./data/label.txt', 'r') as file:
+    for i, line in enumerate(file, start=0):
+        if i == prediction:
+            with open('pid2name.json', 'r') as json_file:
+              data = json.load(json_file)
+              line = line.replace("(e1,e2)","")
+              line = line.replace("(e2,e1)","")
+              return data[line]
 
+    return "No prediction"
+  
+  
 def convert_examples_to_features(
     examples,
     max_seq_len,
