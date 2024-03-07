@@ -70,11 +70,11 @@ def conf_matrix(preds, labels):
     plt.title('Confusion Matrix')
     plt.savefig('confusion_matrix.png')  # Save the plot as an image file
 
-def metrics(preds, labels, average="macro"):
+def metrics(preds, labels, average="weighted"):
     acc = (preds == labels).mean()
-    f1 = f1_score(labels, preds, average="macro")
-    precision = precision_score(labels, preds)
-    recall = recall_score(labels, preds)
+    f1 = f1_score(labels, preds, average=average)
+    precision = precision_score(labels, preds, average=average)
+    recall = recall_score(labels, preds, average=average)
 
 
     conf_matrix(preds, labels)
