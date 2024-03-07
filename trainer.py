@@ -258,11 +258,9 @@ class Trainer(object):
                 }
                 outputs = self.model(**inputs)
                 tmp_eval_loss, logits = outputs[:2]
-
-                preds = np.append(preds, logits.detach().cpu().numpy(), axis=0)
-                out_label_ids = np.append(out_label_ids, inputs["labels"].detach().cpu().numpy(), axis=0)
-
-                print(preds, out_label_ids)
+                preds = logits.detach().cpu().numpy()
+                out_label_ids = inputs["labels"].detach().cpu().numpy()
+                return out_label_ids
 
 
     def save_model(self):

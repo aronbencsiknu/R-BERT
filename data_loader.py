@@ -260,6 +260,8 @@ def load_and_cache_examples(args, tokenizer, mode):
             examples = processor.get_examples("dev")
         elif mode == "test":
             examples = processor.get_examples("test")
+        elif mode.startswith("sentence"):
+            examples = processor.get_examples("sentence")
         else:
             raise Exception("For mode, Only train, dev, test is available")
 

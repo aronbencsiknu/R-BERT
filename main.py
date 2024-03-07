@@ -13,16 +13,18 @@ def main(args):
     train_dataset = load_and_cache_examples(args, tokenizer, mode="train")
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
 
+    trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset)
+
     if args.predict_sentence:
       
-      with open("sentence.tsv", mode="w") as file:
-        file.write("x\t"+str(args.sentence))
+      with open("./data/sentence.tsv", mode="w") as file:
+        file.write("P175(e2,e1)\t"+str(args.predict_sentence))
 
       sentence_dataset = load_and_cache_examples(args, tokenizer, mode="sentence_"+str(datetime.datetime.now()))
 
-      trainer.predict(sentence_dataset)
+      prediction = trainer.predict(sentence_dataset)
+      
 
-    trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset)
 
     if args.do_train:
         trainer.train()
@@ -52,6 +54,7 @@ if __name__ == "__main__":
     parser.add_argument("--train_file", default="train.tsv", type=str, help="Train file")
     parser.add_argument("--test_file", default="test.tsv", type=str, help="Test file")
     parser.add_argument("--label_file", default="label.txt", type=str, help="Label file")
+    parser.add_argument("--predict_sentence", default="", type=str, help="Label file")
 
     parser.add_argument(
         "--model_name_or_path",
