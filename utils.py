@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from official_eval import official_f1
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, precision_score, recall_score
 
 ADDITIONAL_SPECIAL_TOKENS = ["<e1>", "</e1>", "<e2>", "</e2>"]
 
@@ -55,14 +55,7 @@ def set_seed(args):
 
 def compute_metrics(preds, labels):
     assert len(preds) == len(labels)
-    return acc_and_f1(preds, labels)
-
-
-def simple_accuracy(preds, labels):
-    return (preds == labels).mean()
-
-def simple_f1(preds, labels):
-    return f1_score(labels, preds, average="macro")
+    return metrics(preds, labels)
 
 def conf_matrix(preds, labels):
     # Compute confusion matrix
@@ -77,16 +70,20 @@ def conf_matrix(preds, labels):
     plt.title('Confusion Matrix')
     plt.savefig('confusion_matrix.png')  # Save the plot as an image file
 
-def acc_and_f1(preds, labels, average="macro"):
-    acc = simple_accuracy(preds, labels)
+def metrics(preds, labels, average="macro"):
+    acc = (preds == labels).mean()
+    f1 = f1_score(labels, preds, average="macro")
+    precision = precision_score(labels, preds)
+    recall = recall_score(labels, preds)
 
-    f1 = simple_f1(preds, labels)
 
     conf_matrix(preds, labels)
 
     return {
         "acc": acc,
         "f1": f1,
+        "precision": precision,
+        "recall": recall,
     }
     """return {
         "acc": acc,
