@@ -17,7 +17,7 @@ def main(args):
         """num = int(args.num_train_epochs/500)
         args.num_train_epochs = 500
         for _ in range(num):"""
-        trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
+        trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset)
 
         if args.predict_sentence:
         
