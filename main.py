@@ -14,29 +14,29 @@ def main(args):
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
     val_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
     if args.few_shot:
-        num = int(args.num_train_epochs/500)
+        """num = int(args.num_train_epochs/500)
         args.num_train_epochs = 500
-        for _ in range(num):
-            trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
+        for _ in range(num):"""
+        trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
 
-            if args.predict_sentence:
-            
-                with open("./data/sentence.tsv", mode="w") as file:
-                    file.write("P175(e2,e1)\t"+str(args.predict_sentence))
+        if args.predict_sentence:
+        
+            with open("./data/sentence.tsv", mode="w") as file:
+                file.write("P175(e2,e1)\t"+str(args.predict_sentence))
 
-                sentence_dataset = load_and_cache_examples(args, tokenizer, mode="sentence_"+str(datetime.datetime.now()))
+            sentence_dataset = load_and_cache_examples(args, tokenizer, mode="sentence_"+str(datetime.datetime.now()))
 
-                prediction = trainer.predict(sentence_dataset)
-                print(prediction_to_label(prediction))
+            prediction = trainer.predict(sentence_dataset)
+            print(prediction_to_label(prediction))
 
 
-            if args.do_train:
-                trainer.train()
+        if args.do_train:
+            trainer.train()
 
-            if args.do_eval:
-                trainer.load_model()
-                trainer.evaluate("test")
-                trainer.evaluate("dev")
+        if args.do_eval:
+            trainer.load_model()
+            trainer.evaluate("test")
+            trainer.evaluate("dev")
 
     else:
         trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)

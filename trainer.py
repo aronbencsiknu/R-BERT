@@ -29,7 +29,19 @@ class Trainer(object):
         self.label_lst = get_label(args)
         self.num_labels = len(self.label_lst)
 
-        model_path = "./model" if os.path.exists("./model") else args.model_name_or_path 
+        if args.few_shot:
+            if os.path.exists("./fs_model"):
+                model_path = "./fs_model"
+            else:
+                model_path = "./model"
+
+            args.model_dir = "./fs_model"
+
+        elif os.path.exists("./model"):
+            model_path = "./model" 
+        
+        else:
+          model_path = args.model_name_or_path 
 
         self.config = BertConfig.from_pretrained(
             model_path,
