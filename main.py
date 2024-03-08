@@ -79,6 +79,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--train_file", default="train.tsv", type=str, help="Train file")
     parser.add_argument("--test_file", default="test.tsv", type=str, help="Test file")
+    parser.add_argument("--dev_file", default="val.tsv", type=str, help="Test file")
     parser.add_argument("--label_file", default="label.txt", type=str, help="Label file")
     parser.add_argument("--predict_sentence", default="", type=str, help="Label file")
 
