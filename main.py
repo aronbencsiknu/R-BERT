@@ -12,7 +12,7 @@ def main(args):
 
     train_dataset = load_and_cache_examples(args, tokenizer, mode="train")
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
-    val_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
+    #val_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
     if args.few_shot:
         """num = int(args.num_train_epochs/500)
         args.num_train_epochs = 500
@@ -36,10 +36,10 @@ def main(args):
         if args.do_eval:
             trainer.load_model()
             trainer.evaluate("test")
-            trainer.evaluate("dev")
+            #trainer.evaluate("dev")
 
     else:
-        trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
+        trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset)
 
         if args.predict_sentence:
         
