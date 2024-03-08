@@ -14,8 +14,8 @@ def main(args):
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
     val_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
     if args.few_shot:
-        num = int(args.num_train_epochs/250)
-        args.num_train_epochs = 250
+        num = int(args.num_train_epochs/500)
+        args.num_train_epochs = 500
         for _ in range(num):
             trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
 
@@ -36,7 +36,7 @@ def main(args):
             if args.do_eval:
                 trainer.load_model()
                 trainer.evaluate("test")
-                trainer.eval("dev")
+                trainer.evaluate("dev")
 
     else:
         trainer = Trainer(args, train_dataset=train_dataset, test_dataset=test_dataset, dev_dataset=val_dataset)
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--train_file", default="train.tsv", type=str, help="Train file")
     parser.add_argument("--test_file", default="test.tsv", type=str, help="Test file")
-    parser.add_argument("--dev_file", default="val.tsv", type=str, help="Test file")
+    parser.add_argument("--dev_file", default="test.tsv", type=str, help="Test file")
     parser.add_argument("--label_file", default="label.txt", type=str, help="Label file")
     parser.add_argument("--predict_sentence", default="", type=str, help="Label file")
 
