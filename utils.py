@@ -60,7 +60,7 @@ def compute_metrics(preds, labels):
 def conf_matrix(preds, labels):
     # Compute confusion matrix
     conf_matrix = confusion_matrix(labels, preds)
-    print(conf_matrix)
+    #print(conf_matrix)
 
     # Plot confusion matrix
     plt.figure(figsize=(8, 6))
