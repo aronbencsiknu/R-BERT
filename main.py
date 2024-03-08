@@ -134,7 +134,7 @@ if __name__ == "__main__":
         help="Dropout for fully-connected layers",
     )
 
-    parser.add_argument("--logging_steps", type=int, default=250, help="Log every X updates steps.")
+    parser.add_argument("--logging_steps", type=int, default=251, help="Log every X updates steps.")
     parser.add_argument(
         "--save_steps",
         type=int,
